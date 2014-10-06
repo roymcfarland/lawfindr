@@ -1,0 +1,17 @@
+.navbar {
+	margin-bottom: -20px;
+}
+
+.jumbotron {
+	background: url('Themis.JPG') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 342px 0px;
+}
+
+#welcome {
+	font-size: 4em;
+	font-style: bold;
+}
