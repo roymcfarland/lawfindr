@@ -15,3 +15,21 @@
 	font-size: 4em;
 	font-style: bold;
 }
+
+.footer-header {
+	font-size: 1em;
+	height: 20px;
+	width: 150px;
+	margin: 0px auto 0px auto;
+}
+
+.footer-container {
+	height: 50px;
+	width: 1400px;
+	margin: 0px auto 0px auto;
+}
+
+.footer {
+	display: inline-block;
+	padding: 0px 10px;
+}

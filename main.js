@@ -1,11 +1,12 @@
 $(document).on('ready', function() {
+	
+	// Inserts username / password into login box
 	$(".username").val("roy_mcfarland")
 	$(".password").val("************")
   
-	$('#login').click(function(e){
-		e.preventDefault;
-		console.log('hey');
-		window.location.replace('page2.html');
+	$(document).on('click', '#myLogin', function(e){
+		e.preventDefault();
+		window.location.replace('file:///Users/student/projects/week5/midterm/research-portal.html');
 	});
 
 });
