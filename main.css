@@ -11,25 +11,45 @@
 	padding: 342px 0px;
 }
 
-#welcome {
+#signIn {
 	font-size: 4em;
 	font-style: bold;
 }
 
 .footer-header {
-	font-size: 1em;
+	font-size: 15px;
 	height: 20px;
 	width: 150px;
 	margin: 0px auto 0px auto;
 }
 
-.footer-container {
-	height: 50px;
-	width: 1400px;
-	margin: 0px auto 0px auto;
+#beginSearch {
+	margin: 5% auto 0% auto;
+	width: 40%;
 }
 
-.footer {
-	display: inline-block;
-	padding: 0px 10px;
+#searchButton {
+	float: right;
+	margin: 2% auto;
+}
+
+.social i {
+	padding: 11% 0% 0% 0%;
+}
+
+.level1 {
+	margin: 5% 5%;
+}
+
+.level1 div:nth-child(1) {
+	border: 1px solid gray;
+	border-radius: 5%;
+}
+
+.level2 {
+	margin: 5% 5%;
+}
+
+.level3 {
+	margin: 5% 5%;
 }
