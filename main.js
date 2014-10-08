@@ -1,7 +1,53 @@
+///////////////////////////////////////////////
+////////////// GLOBAL VARIABLES ///////////////
+///////////////////////////////////////////////
+
+var elementsOfMurder = '<div class="row level1">' +
+	'<div class="col-xs-2 elements"><span class="label label-success">Elements:</span></div>' +
+	'<div class="col-xs-2" id="action"><button type="button" class="btn btn-default">Action</button></div>' +
+	'<div class="col-xs-2" id="intent"><button type="button" class="btn btn-default">Intent</button></div>' +
+	'<div class="col-xs-2" id="causation"><button type="button" class="btn btn-default">Causation</button></div>' +
+	'<div class="col-xs-2"><button type="button" class="btn btn-default popover-btn" data-container="body" data-toggle="popover" data-placement="top" data-content="The act must cause the death of an actual living person, which can include a fetus in certain states.">Person</button></div>' +
+	'<div class="col-xs-1"><button type="button" class="btn btn-default">Harm</button></div>' +
+	'<div class="col-xs-1"><span class="glyphicon glyphicon-remove removeButton"></span></div>'
+	'</div>';
+
+var actionResult = '<div class="row level1">' +
+	'<div class="col-xs-2 elements"></div>' +
+	'<div class="col-xs-2">Involuntary Action</div>' +
+	'<div class="col-xs-2">Voluntary Action</div>' +
+	'<div class="col-xs-2">Failure to Act</div>' +
+	'<div class="col-xs-2"></div>' +
+	'<div class="col-xs-1"></div>' +
+	'<div class="col-xs-1"><span class="glyphicon glyphicon-remove removeButton"></span></div>'
+	'</div>';
+
+var intentResult = '<div class="row level2">' +
+	'<div class="col-xs-2"></div>' +
+	'<div class="col-xs-2">Intent to Kill</div>' +
+	'<div class="col-xs-2" id="target2">Intent to Cause Serious Bodily Injury</div>' +
+	'<div class="col-xs-2">Depraved Heart</div>' +
+	'<div class="col-xs-2">Felony Murder</div>' +
+	'<div class="col-xs-1"></div>' +
+	'<div class="col-xs-1"><span class="glyphicon glyphicon-remove removeButton"></span></div>'
+	'</div>';
+
+var thirdResult = '<div class="row level3">' +
+	'<div class="col-xs-2"></div>' +
+	'<a href="http://scholar.google.com/scholar_case?case=15035002282262379891" target="_blank"><div class="col-xs-2">Jones v. United States <br> 526 US 227 (1999)</div></a>' +
+	'<a href="http://scholar.google.com/scholar_case?case=1379329779334955251" target="_blank"><div class="col-xs-2">United States v. Bailey <br> 444 US 394 (1980)</div></a>' +
+	'<a href="http://scholar.google.com/scholar_case?case=8614464154510334483" target="_blank"><div class="col-xs-2">Holloway v. United States <br> 526 US 1 (1999)</div></a>' +
+	'<div class="col-xs-2"></div>' +
+	'<div class="col-xs-1"></div>' +
+	'<div class="col-xs-1"><span class="glyphicon glyphicon-remove removeButton"></span></div>'
+	'</div>';
+
+
+
 $(document).on('ready', function() {
 	
 ///////////////////////////////////////////////
-///////////////// NAVIGATION //////////////////
+//////////// INTRASITE NAVIGATION /////////////
 ///////////////////////////////////////////////
 
 	// Inserts static username & password @signIn
@@ -27,54 +73,58 @@ $(document).on('ready', function() {
 
 
 ///////////////////////////////////////////////
-////// APPENDING RESEARCH RESULTS TO DOM //////
+//////////////// EVENT HANDLERS ///////////////
 ///////////////////////////////////////////////
 
 /**
- * Renders first level of results to DOM
- * @return {elements} of a crime (i.e., murder)
+ * Opt-in to popover actions
+ * @return {popover} when button is clicked
+ */
+	$(document).on('click', '.popover-btn', function(e) {
+		e.preventDefault();
+		$('[data-toggle=popover]').popover();
+	});
+
+/**
+ * Appends research results to DOM
+ * @return {constituent elements} of murder
  */
 	$(document).on('click', '#searchButton', function(){
 		$('#searchText').val('');
-		var firstResult = '<div class="row level1">' +
-      		'<span><div class="col-xs-2 elements">Elements:</div></span>' +
-      		'<div class="col-xs-2">Actus Reus</div>' +
-      		'<div class="col-xs-2" id="target1">Mens Rea</div>' +
-      		'<div class="col-xs-2">Concurrence</div>' +
-      		'<div class="col-xs-2">Causation</div>' +
-      		'<div class="col-xs-1">Harm</div>' +
-      		'</div>';
-		$('#resultSpace').append(firstResult);
+		// $('#searchInstructions').remove();
+		$('#resultSpace').append(elementsOfMurder);
 	});
 
 /**
- * Renders second level of results to DOM
- * @return {distinctions} of intent (i.e., mens rea)
+ * Appends research results to DOM
+ * @return {types} of actions that can be murderous
+ */	
+	$(document).on('click', '#action', function(){
+		$('#resultSpace').append(actionResult);
+	});
+
+/**
+ * Renders research results to DOM
+ * @return {types} of intent that can be murderous
  */
-	$(document).on('click', '#target1', function(){
-		var secondResult = '<div class="row level2">' +
-      		'<div class="col-xs-2"></div>' +
-      		'<div class="col-xs-2">Intent to Kill</div>' +
-      		'<div class="col-xs-2" id="target2">Intent to Cause Serious Bodily Injury</div>' +
-      		'<div class="col-xs-2">Depraved Heart</div>' +
-      		'<div class="col-xs-2">Felony Murder</div>' +
-    		'</div>';
-    	$('#resultSpace').append(secondResult);
+	$(document).on('click', '#intent', function(){
+    	$('#resultSpace').append(intentResult);
 	});
 
 /**
- * Renders third level of results to DOM
+ * Renders research results to DOM
  * @return {cases} pertaining to murderous intent
  */
 	$(document).on('click', '#target2', function(){
-		var thirdResult = '<div class="row level3">' +
-      		'<div class="col-xs-2"></div>' +
-      		'<a href="http://scholar.google.com/scholar_case?case=15035002282262379891" target="_blank"><div class="col-xs-2">Jones v. United States <br> 526 US 227 (1999)</div></a>' +
-      		'<a href="http://scholar.google.com/scholar_case?case=1379329779334955251" target="_blank"><div class="col-xs-2">United States v. Bailey <br> 444 US 394 (1980)</div></a>' +
-      		'<a href="http://scholar.google.com/scholar_case?case=8614464154510334483" target="_blank"><div class="col-xs-2">Holloway v. United States <br> 526 US 1 (1999)</div></a>' +
-      		'<div class="col-xs-2"></div>' +
-    		'</div>';
     	$('#resultSpace').append(thirdResult);
-	});	
+	});
+
+/**
+ * Used to remove specific row of results from DOM
+ * @return {delete} when a row's removeButton is clicked
+ */
+	$(document).on('click', '.removeButton', function(){
+		$(this).closest('.row').remove();
+	});
 
 });

@@ -48,17 +48,23 @@
         </li>
         <li><a href="#" id="logout">Logout</a></li>
       </ul>
-		</div> <!-- container-fluid -->
-	</nav> <!-- navbar-top -->
+		</div> <!-- container -->
+	</nav> <!-- navbar -->
 
+<!-- Search box and banner with instructions -->
 	<div class="container" id="beginSearch">
+    <div class="alert alert-success alert-dismissible" id="searchInstructions" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <strong>Start Here!</strong> Enter a keyword to return its constituent elements.
+    </div>
 		<input type="text" class="form-control" id="searchText" placeholder="">
     <button type="button" class="btn btn-primary" id="searchButton"><span class="glyphicon glyphicon-search"></span> Search</button>
 	</div>
 
-  <div class="container" id="resultSpace"></div>
-
-
+<!-- Location where research results are rendered -->
+  <div class="container">
+    <div id="resultSpace"></div>
+  </div>
 
 
 
