@@ -24,7 +24,7 @@
 }
 
 #beginSearch {
-	margin: 5% auto 0% auto;
+	margin: 10% auto 0% auto;
 	width: 40%;
 }
 
@@ -41,11 +41,6 @@
 	margin: 5% 5%;
 }
 
-.level1 div:nth-child(1) {
-	border: 1px solid gray;
-	border-radius: 5%;
-}
-
 .level2 {
 	margin: 5% 5%;
 }
@@ -53,3 +48,8 @@
 .level3 {
 	margin: 5% 5%;
 }
+
+.elements {
+	color: #428bca;
+}
+

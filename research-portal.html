@@ -15,38 +15,48 @@
   			<div class="navbar-header">
   				<a class="navbar-brand" href="#">LawFindr.</a>
   			</div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bookmarks<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Palsgraf v. Long Island Railroad Co.</a></li>
+            <li><a href="#">Roe v. Wade</a></li>
+            <li><a href="#">International Shoe Co. v. Washington</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Edit Bookmarks</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">History<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">insurance fraud</a></li>
+            <li><a href="#">shooting + plot + defraud</a></li>
+            <li><a href="#">malum prohibitum</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Clear History</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saved Libraries<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Federal</a></li>
+            <li><a href="#">Colorado</a></li>
+            <li><a href="#">Oregon</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Edit Libraries</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="logout">Logout</a></li>
+      </ul>
 		</div> <!-- container-fluid -->
 	</nav> <!-- navbar-top -->
 
 	<div class="container" id="beginSearch">
-		<input type="text" class="form-control" placeholder="">
+		<input type="text" class="form-control" id="searchText" placeholder="">
     <button type="button" class="btn btn-primary" id="searchButton"><span class="glyphicon glyphicon-search"></span> Search</button>
 	</div>
 
-  <div class="container">
-    <div class="row level1">
-      <div class="col-xs-2">Elements</div>
-      <div class="col-xs-2">Actus Reus</div>
-      <div class="col-xs-2">Mens Rea</div>
-      <div class="col-xs-2">Concurrence</div>
-      <div class="col-xs-2">Causation</div>
-      <div class="col-xs-1">Harm</div>
-    </div>
-    <div class="row level2">
-      <div class="col-xs-2"></div>
-      <div class="col-xs-2">Intent to Kill</div>
-      <div class="col-xs-2">Intent to Cause Serious Bodily Injury</div>
-      <div class="col-xs-2">Depraved Heart</div>
-      <div class="col-xs-2">Felony Murder</div>
-    </div>
-    <div class="row level3">
-      <div class="col-xs-2"></div>
-      <div class="col-xs-2">Jones v. United States <br> 526 US 227 (1999)</div>
-      <div class="col-xs-2">United States v. Bailey <br> 444 US 394 (1980)</div>
-      <div class="col-xs-2">Holloway v. United States <br> 526 US 1 (1999)</div>
-      <div class="col-xs-2"></div>
-    </div>
-  </div>
+  <div class="container" id="resultSpace"></div>
 
 
 
