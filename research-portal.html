@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
   <link href=" rel="stylesheet" http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -52,24 +52,45 @@
 		</div> <!-- container -->
 	</nav> <!-- navbar -->
 
-<!-- Search box and banner with instructions -->
+<!-- Search box, buttons & banner with instructions -->
 	<div class="container" id="beginSearch">
     <div class="alert alert-success alert-dismissible" id="searchInstructions" role="alert">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       <strong>Start Here!</strong> Enter a keyword to return its constituent elements and begin your search.
     </div>
 		<input type="text" class="form-control" id="searchText" placeholder="">
-    <button type="button" class="btn btn-primary" id="searchButton"><span class="glyphicon glyphicon-search"></span> Search</button>
-	</div>
+    <div id="searchButtons">
+      <button class="btn btn-default" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-thumbs-up"></span> Some Levity</button>
+      <button type="button" class="btn btn-primary" id="search"><span class="glyphicon glyphicon-search"></span> Search</button>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title centerMe" id="myModalLabel">My Cousin Vinny</h4>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="420" height="315" src="http://www.youtube.com/embed/HUMM9W61vk8" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Location where research results are rendered -->
   <div class="container">
     <div id="resultSpace"></div>
   </div>
 
-
-
-	
+<!-- JavaScript -->	
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="main.js"></script>

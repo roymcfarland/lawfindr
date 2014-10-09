@@ -3,12 +3,18 @@
 }
 
 .jumbotron {
-	background: url('Themis.JPG') no-repeat center center;
+	background: url('images/Themis.JPG') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 342px 0px;
+}
+
+.centerMe {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #signIn {
@@ -28,7 +34,7 @@
 	width: 40%;
 }
 
-#searchButton {
+#searchButtons {
 	float: right;
 	margin: 2% auto;
 }
@@ -54,4 +60,60 @@
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#cases-action1 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-action2 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-action3 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-intent1 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-intent2 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-causation1 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-causation2 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
+}
+
+#cases-causation3 {
+	display: none;
+	background-color: moccasin;
+	border-radius: 15px;
+	padding: 15px 10px 15px 20px;
 }
