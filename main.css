@@ -39,6 +39,10 @@
 	margin: 2% auto;
 }
 
+#levityButton {
+	margin-right: 20px;
+}
+
 .social i {
 	padding: 11% 0% 0% 0%;
 }
@@ -69,11 +73,19 @@
 	padding: 15px 10px 15px 20px;
 }
 
+#endAction1 {
+	margin-right: 30px;
+}
+
 #cases-action2 {
 	display: none;
 	background-color: moccasin;
 	border-radius: 15px;
 	padding: 15px 10px 15px 20px;
+}
+
+#endAction2 {
+	margin-right: 30px;
 }
 
 #cases-action3 {
@@ -83,11 +95,19 @@
 	padding: 15px 10px 15px 20px;
 }
 
+#endAction3 {
+	margin-right: 30px;
+}
+
 #cases-intent1 {
 	display: none;
 	background-color: moccasin;
 	border-radius: 15px;
 	padding: 15px 10px 15px 20px;
+}
+
+#endIntent1 {
+	margin-right: 30px;
 }
 
 #cases-intent2 {
@@ -97,11 +117,19 @@
 	padding: 15px 10px 15px 20px;
 }
 
+#endIntent2 {
+	margin-right: 30px;
+}
+
 #cases-causation1 {
 	display: none;
 	background-color: moccasin;
 	border-radius: 15px;
 	padding: 15px 10px 15px 20px;
+}
+
+#endCausation1 {
+	margin-right: 30px;
 }
 
 #cases-causation2 {
@@ -111,9 +139,17 @@
 	padding: 15px 10px 15px 20px;
 }
 
+#endCausation2 {
+	margin-right: 30px;
+}
+
 #cases-causation3 {
 	display: none;
 	background-color: moccasin;
 	border-radius: 15px;
 	padding: 15px 10px 15px 20px;
+}
+
+#endCausation3 {
+	margin-right: 30px;
 }

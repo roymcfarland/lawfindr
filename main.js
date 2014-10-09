@@ -18,8 +18,10 @@ var actionResult = '<div class="row rowBreak">' +
         	'<p>No crime can be committed by bad thoughts alone. Instead, the defendant\'s act must result from his or her conscious choice. The choice need not be the product of thorough deliberation but may stem from an impulse. For example, a person who suddenly slips on a mountain trail and reaches out to grab the arm of a bystander to avoid falling has acted voluntarily because his mind has quickly grasped the situation and dictated a response.</p>' +
         	'<ul id="cases-action1">' +
         		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<p><a href="#" class="btn btn-primary" id="action1" role="button">Cases</a></p>' +
+        	'<button type="button" class="btn btn-default" id="endAction1" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="action1" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -32,7 +34,8 @@ var actionResult = '<div class="row rowBreak">' +
         	'<ul id="cases-action2">' +
         		'<li>California v. Ebanks: the court rejected defendant\'s argument that he acted involuntarily when murder ex-wife because he was drunk and hypnotized. The judge bluntly remarked that \"[t]he law of the United States does not recognize hypnotism.\"</li>' +
         	'</ul>' +
-        	'<p><a href="#" class="btn btn-primary" id="action2" role="button">Cases</a></p>' +
+        	'<button type="button" class="btn btn-default" id="endAction2" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="action2" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -46,7 +49,8 @@ var actionResult = '<div class="row rowBreak">' +
         		'<li>R v. Miller: Defendant was guilty of murder for burning down an apartment building. He fell asleep on his mattress while smoking a cigarette. When he woke, he found that the mattress was smouldering but, instead of calling for help, he simply moved into another room, which allowed the fire to spread.</li>' +
         		'<li>R v. Pittwood: Defendant was convicted of manslaughter after he failed to close the gate on a level crossing as he was contracted to do. This caused a train to collide with a hay cart, and the court ruled that a man \'might\' incur criminal liability from a duty arising out of contract.</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="action3" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endAction3" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="action3" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -61,10 +65,11 @@ var intentResult = '<div class="row rowBreak">' +
         	'<h3>Intent to Kill</h3>' +
         	'<p>A person who creates a dangerous situation may be under a duty to take reasonable steps to avert that danger. Similarly, there may be a statutory duty to prevent harm when the defendant is acting under a contractual duty or other form of fiduciary responsibility.</p>' +
         	'<ul id="cases-intent1">' +
-        		'<li></li>' +
-        		'<li></li>' +
+        		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="intent1" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endIntent1" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="intent1" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -75,10 +80,11 @@ var intentResult = '<div class="row rowBreak">' +
         	'<h3>Intent to Cause Serious Injury</h3>' +
         	'<p>If a defendant kills another person unintentionally, he or she can still be guilty of murder if it can be shown that the defendant intended to cause great bodily injury to the victim.</p>' +
         	'<ul id="cases-intent2">' +
-        		'<li></li>' +
-        		'<li></li>' +
+        		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="intent2" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endIntent2" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="intent2" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -93,10 +99,11 @@ var causationResult = '<div class="row rowBreak">' +
         	'<h3>Cause-in-Fact</h3>' +
         	'<p>But-For Test: The victim\'s death would not have occurred but for the defendant\'s actions.</p>' +
         	'<ul id="cases-causation1">' +
-        		'<li></li>' +
-        		'<li></li>' +
+        		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="causation1" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endCausation1" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="causation1" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -107,10 +114,11 @@ var causationResult = '<div class="row rowBreak">' +
         	'<h3>Proximate Cause</h3>' +
         	'<p>When the victim\'s death was a natural and probable consquence of the defendant\'s conduct, the defendant may be guilty of murder even if he did not foresee the exact chain of events that resulted in the victim\'s death.</p>' +
         	'<ul id="cases-causation2">' +
-        		'<li></li>' +
-        		'<li></li>' +
+        		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="causation2" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endCausation2" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="causation2" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -121,10 +129,11 @@ var causationResult = '<div class="row rowBreak">' +
         	'<h3>Simultaneous Events</h3>' +
         	'<p>When two or more people act simulataneously - yet independently - each may be guilty of murder.</p>' +
         	'<ul id="cases-causation3">' +
-        		'<li></li>' +
-        		'<li></li>' +
+        		'<li>Case 1:</li>' +
+        		'<li>Case 2:</li>' +
         	'</ul>' +
-        	'<button type="button" class="btn btn-primary" id="causation3" role="button">Cases</button>' +
+        	'<button type="button" class="btn btn-default" id="endCausation3" role="button">Close</button>' +
+        	'<button type="button" class="btn btn-primary" id="causation3" role="button">Open Cases</button>' +
       	'</div>' +
     	'</div>' +
   	'</div>' +
@@ -198,12 +207,24 @@ $(document).on('ready', function() {
 		$('#cases-action1').slideDown('slow');
 	});
 
+	$(document).on('click', '#endAction1', function(){
+		$('#cases-action1').slideUp('slow');
+	});
+
 	$(document).on('click', '#action2', function(){
 		$('#cases-action2').slideDown('slow');
 	});
 
+	$(document).on('click', '#endAction2', function(){
+		$('#cases-action2').slideUp('slow');
+	});
+
 	$(document).on('click', '#action3', function(){
 		$('#cases-action3').slideDown('slow');
+	});
+
+	$(document).on('click', '#endAction3', function(){
+		$('#cases-action3').slideUp('slow');
 	});
 
 
@@ -219,9 +240,17 @@ $(document).on('ready', function() {
 		$('#cases-intent1').slideDown('slow');
 	});
 
+	$(document).on('click', '#endIntent1', function(){
+		$('#cases-intent1').slideUp('slow');
+	});
+
 	$(document).on('click', '#intent2', function(){
 		$('#cases-intent2').slideDown('slow');
-	})
+	});
+
+	$(document).on('click', '#endIntent2', function(){
+		$('#cases-intent2').slideUp('slow');
+	});
 
 
 /**
@@ -236,21 +265,24 @@ $(document).on('ready', function() {
 		$('#cases-causation1').slideDown('slow');
 	});
 
+	$(document).on('click', '#endCausation1', function(){
+		$('#cases-causation1').slideUp('slow');
+	});
+
 	$(document).on('click', '#causation2', function(){
 		$('#cases-causation2').slideDown('slow');
+	});
+
+	$(document).on('click', '#endCausation2', function(){
+		$('#cases-causation2').slideUp('slow');
 	});
 
 	$(document).on('click', '#causation3', function(){
 		$('#cases-causation3').slideDown('slow');
 	});
 
-
-/**
- * Renders research results to DOM
- * @return {#cases} pertaining to murderous intent
- */
-	$(document).on('click', '#intent2', function(){
-    	$('#resultSpace').append(cases);
+	$(document).on('click', '#endCausation3', function(){
+		$('#cases-causation3').slideUp('slow');
 	});
 
 
