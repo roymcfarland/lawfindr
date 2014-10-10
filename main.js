@@ -17,8 +17,7 @@ var actionResult = '<div class="row rowBreak">' +
         	'<h3>Voluntary Action</h3>' +
         	'<p>No crime can be committed by bad thoughts alone. Instead, the defendant\'s act must result from his or her conscious choice. The choice need not be the product of thorough deliberation but may stem from an impulse. For example, a person who suddenly slips on a mountain trail and reaches out to grab the arm of a bystander to avoid falling has acted voluntarily because his mind has quickly grasped the situation and dictated a response.</p>' +
         	'<ul id="cases-action1">' +
-        		'<li>Case 1:</li>' +
-        		'<li>Case 2:</li>' +
+        		'<li><a href="http://murderpedia.org/male.D/images/dahmer-jeffrey/docs/jeffrey-dahmer-criminal-complaint.pdf" target="_blank">Wisconsin v. Dahmer:</a> Defendant was guilty of murder when he intentionally killed 15 people over the course of 10 years.</li>' +
         	'</ul>' +
         	'<button type="button" class="btn btn-default" id="endAction1" role="button">Close</button>' +
         	'<button type="button" class="btn btn-primary" id="action1" role="button">Open Cases</button>' +
@@ -32,7 +31,7 @@ var actionResult = '<div class="row rowBreak">' +
         	'<h3>Involuntary Action</h3>' +
         	'<p>Acts over which a person has no physical or mental control are not voluntary. A muscle reflex driven by the autonomic nervous system, such as a knee jerk, is not considered voluntary under the law. Acts committed during seizures, convulsions, hypnosis, or unconscious mental states also lack sufficient volition and judgment needed to impose criminal liability. For the same reasons, acts committed during episodes of sleepwalking are not considered voluntary.</p>' +
         	'<ul id="cases-action2">' +
-        		'<li>California v. Ebanks: the court rejected defendant\'s argument that he acted involuntarily when murder ex-wife because he was drunk and hypnotized. The judge bluntly remarked that \"[t]he law of the United States does not recognize hypnotism.\"</li>' +
+        		'<li><a href="http://scholar.google.com/scholar_case?case=569468614724033352" target="_blank">People v. Eubanks:</a> the court rejected defendant\'s argument that he acted involuntarily when murder ex-wife because he was drunk and hypnotized. The judge bluntly remarked that \"[t]he law of the United States does not recognize hypnotism.\"</li>' +
         	'</ul>' +
         	'<button type="button" class="btn btn-default" id="endAction2" role="button">Close</button>' +
         	'<button type="button" class="btn btn-primary" id="action2" role="button">Open Cases</button>' +
@@ -46,8 +45,8 @@ var actionResult = '<div class="row rowBreak">' +
         	'<h3>Failure to Act</h3>' +
         	'<p>A person who creates a dangerous situation may be under a duty to take reasonable steps to avert that danger. Similarly, there may be a statutory duty to prevent harm when the defendant is acting under a contractual duty or other form of fiduciary responsibility.</p>' +
         	'<ul id="cases-action3">' +
-        		'<li>R v. Miller: Defendant was guilty of murder for burning down an apartment building. He fell asleep on his mattress while smoking a cigarette. When he woke, he found that the mattress was smouldering but, instead of calling for help, he simply moved into another room, which allowed the fire to spread.</li>' +
-        		'<li>R v. Pittwood: Defendant was convicted of manslaughter after he failed to close the gate on a level crossing as he was contracted to do. This caused a train to collide with a hay cart, and the court ruled that a man \'might\' incur criminal liability from a duty arising out of contract.</li>' +
+        		'<li><a href="http://www.bailii.org/uk/cases/UKHL/1982/6.html" target="_blank">Regina v. Miller:</a> Defendant was guilty of murder for burning down an apartment building. He fell asleep on his mattress while smoking a cigarette. When he woke, he found that the mattress was smouldering but, instead of calling for help, he simply moved into another room, which allowed the fire to spread.</li>' +
+        		'<li><a href="http://www.legalyankee.com/2010/12/r-v-pittwood-1902-19-times-law-reports.html" target="_blank">R v. Pittwood:</a> Defendant was convicted of manslaughter after he failed to close the gate on a level crossing as he was contracted to do. This caused a train to collide with a hay cart, and the court ruled that a man \'might\' incur criminal liability from a duty arising out of contract.</li>' +
         	'</ul>' +
         	'<button type="button" class="btn btn-default" id="endAction3" role="button">Close</button>' +
         	'<button type="button" class="btn btn-primary" id="action3" role="button">Open Cases</button>' +
@@ -65,8 +64,7 @@ var intentResult = '<div class="row rowBreak">' +
         	'<h3>Intent to Kill</h3>' +
         	'<p>A person who creates a dangerous situation may be under a duty to take reasonable steps to avert that danger. Similarly, there may be a statutory duty to prevent harm when the defendant is acting under a contractual duty or other form of fiduciary responsibility.</p>' +
         	'<ul id="cases-intent1">' +
-        		'<li>Case 1:</li>' +
-        		'<li>Case 2:</li>' +
+        		'<li><a href="http://scholar.google.com/scholar_case?case=15176916420386811981" target="_blank">People v. Manson:</a> [text summary]</li>' +
         	'</ul>' +
         	'<button type="button" class="btn btn-default" id="endIntent1" role="button">Close</button>' +
         	'<button type="button" class="btn btn-primary" id="intent1" role="button">Open Cases</button>' +
